@@ -1,4 +1,10 @@
 import './bootstrap';
+import {Alpine, Livewire} from '../../vendor/livewire/livewire/dist/livewire.esm';
+import ToastComponent from '../../vendor/usernotnull/tall-toasts/resources/js/tall-toasts'
+
+Alpine.plugin(ToastComponent)
+
+Livewire.start()
 
 import Editor from '@toast-ui/editor'
 import '@toast-ui/editor/dist/toastui-editor.css';

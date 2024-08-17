@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\GameController;
+use App\Http\Controllers\Admin\GameReviewController;
 use App\Http\Controllers\User\ArticleController as UserArticleController;
 use App\Http\Controllers\User\WebsiteController;
 use Illuminate\Support\Facades\Route;
@@ -25,5 +27,7 @@ Route::middleware([
         })->name('dashboard');
 
         Route::resource('articles', ArticleController::class);
+        Route::resource('games', GameController::class);
+        Route::resource('game-reviews', GameReviewController::class);
     });
 });

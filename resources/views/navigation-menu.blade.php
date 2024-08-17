@@ -18,6 +18,12 @@
                     <x-nav-link href="{{ route('admin.articles.index') }}" :active="request()->routeIs('admin.articles.index')">
                         {{ __('Articles') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('admin.games.index') }}" :active="request()->routeIs('admin.games.index')">
+                        {{ __('Games') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('admin.game-reviews.index') }}" :active="request()->routeIs('admin.game-reviews.index')">
+                        {{ __('Game Reviews') }}
+                    </x-nav-link>
                 </div>
             </div>
 
